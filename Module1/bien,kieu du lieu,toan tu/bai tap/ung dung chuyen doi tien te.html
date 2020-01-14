@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="A">
+    <option value="vnd">vnd</option>
+    <option value="usd">usd</option>
+</select>
+<select id="B">
+    <option value="vnd">vnd</option>
+    <option value="usd">usd</option>
+</select>
+<input type ="button" value="chuyendoi"onclick="ketqua();"><br>
+nhapgiatri:<input type ="text" id="nhapgiatri"><br>
+ketqua:<input type="text" id="ketqua"><br>
+<script>
+    function ketqua() {
+        var B = document.getElementById("B").value;
+        var A = document.getElementById("A").value;
+        var c = document.getElementById("nhapgiatri").value;
+        if (B == "vnd" && A == "usd") {
+            document.getElementById  ("ketqua").value =c * 23000;
+        }
+        else if (A == "vnd" && B == "usd") {
+            document.getElementById("ketqua").value = c / 23000;
+        }
+
+        else document.getElementById("ketqua").value=ketqua;
+
+    }
+
+</script>
+</body>
+</html>

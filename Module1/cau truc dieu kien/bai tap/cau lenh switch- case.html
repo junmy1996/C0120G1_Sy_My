@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type ="button" value="tinhsongay"onclick="ketqua()">
+<input type ="text" id="nhap" >
+ketqua:<input type="text" id="ketqua">
+<script>
+    function ketqua() {
+        a=parseInt(document.getElementById("nhap").value);
+        switch (a) {
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 :
+                ketqua=document.getElementById("ketqua").value="co 31 ngay ";
+                break;
+            case 2:
+                ketqua=document.getElementById("ketqua").value ="co 28,29 ngay";
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                ketqua=document.getElementById("ketqua").value ="co 30 ngay";
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

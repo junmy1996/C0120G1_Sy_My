@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var inputwight;
+    var inputheight;
+    inputwight= prompt("enter the wight")
+    inputheight= prompt("enter the height")
+    var  wight =parseInt(inputwight);
+    var height =parseInt(inputheight);
+    var  bmi = wight/(height*height);
+    document.write(" bmi  :" + bmi);
+    if (bmi<18.5){
+        document.write("underweight");
+    }
+    else if (bmi<25.0){
+        document.write("normal");
+    }
+    else if (bmi<30.0){
+        document.write("overweight");
+    }
+    else
+        document.write("obese");
+</script>
+</body>
+</html>
