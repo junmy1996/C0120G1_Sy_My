@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var nameCustomer = prompt("enter the nameCustomer")
+    var idCard = prompt("enter the idCard");
+    var birthdayCustomer = prompt(" enter the birthday Customer");
+    var emailCustomer = prompt ("enter the email Customer");
+    var adressCustomer = prompt("enter the adress Customer");
+    var typeCustomer =prompt("enter the typeCustomer");
+    var discount =prompt("discount");
+    var numberOfCompanying = prompt(" enter the numberOfCompanying");
+    var typeRoom = prompt("enter the typeRoom");
+    var renDay = prompt("enter the renDay");
+    var total = 500 *parseInt(renDay) * (1-parseFloat(discount)/100);
+    var choose =prompt("\n 1.show information customer"+
+        "\n 2.edit information customer" +
+        "\n 3.show the amount to be paid afer discount");
+    switch (choose) {
+        case "1":
+            alert("\n nameCustomer"+nameCustomer+
+                "\nidCard"+idCard +
+                "\nbirthday Customer"+birthdayCustomer+
+                "\nemail Customer"+emailCustomer+
+                "\nadress Customer"+adressCustomer+
+                "\ntypeCustomer"+typeCustomer+
+                "\n numberOfCompanying"+numberOfCompanying+
+                "\ntypeRoom"+typeRoom+
+                "\nrenDay"+renDay+
+                "\ntotal"+total);
+            break;
+            case"2":
+                var chooseedit =prompt(
+                    "\n 1. nameCustomer"+nameCustomer +
+                    "\n 2.idcard"+idCard +
+                    "\n 3.birthday Customer"+birthdayCustomer+
+                    "\n 4.email Customer"+emailCustomer+
+                    "\n 5.adress Customer"+adressCustomer+
+                    "\n 6.typeCustomer"+typeCustomer+
+                    "\n 7.numberOfCompanying"+numberOfCompanying+
+                    "\n 8.typeRoom"+typeRoom+
+                    "\n 9.renDay"+renDay+
+                    "\n 10.total"+total);
+                switch (chooseedit) {
+                    case "1":
+                        nameCustomer =prompt("enter the nameCustomer");
+                        break;
+                    case"2":
+                        idCard=prompt("enter the idCard");
+                        break;
+                    case "3":
+                        birthdayCustomer=prompt("enter the birtdayCustomer");
+                        break;
+                    case"4":
+                        emailCustomer=prompt("enter the email Customer");
+                        break;
+                    case"5":
+                        adressCustomer=prompt("enter the adressCustomer");
+                        break;
+                    case"6":
+                        typeCustomer=prompt("enter the typeCustomer");
+                        break;
+                    case "7":
+                        numberOfCompanying=prompt("enter the numberOfCompanying");
+                        break;
+                    case"8":
+                        typeRoom=prompt("enter thr typeRoom");
+                        break;
+                    case"9":
+                        renDay=prompt("enter the renDay");
+                        break;
+                    case "10":
+                        total=prompt("total");
+
+
+
+
+
+
+
+                }
+
+
+
+
+   }
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
